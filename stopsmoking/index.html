@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--                            TO DO
+        1. PREVENT USERS FROM SELECTING A FUTURE DATE
+        2. VALIDATE THAT QUIT DATE IS IN CORRECT FORMAT, INCLUDING "/"s
+        3. ADD GRAPHICAL CALENDAR
+-->
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>stopsmoking.com</h1>
+        <h3>stop smoking, start living!</h3>
+        
+        <form action="results.php" method="get">
+            <label for="started"> Quit date: </label>
+            <input type="date" name="started" id="started" placeholder="MM/DD/YYYY" /><br>
+        
+        
+            <label> On average, how many packs of cigarettes did you smoke per day? </label>
+            <select name="packs_per_day">
+                <option selected disabled> Packs per day... </option>
+                <option value="0.5"> 0.5 </option>
+                <option value="1"> 1 </option>
+                <option value="1.5"> 1.5 </option>
+                <option value="2"> 2 </option>
+                <option value="2.5"> 2.5 </option>
+                <option value="3"> 3 </option>
+            </select><br>
+            
+            <label> What brand of cigarette did you smoke most frequently? </label>
+            <select name="brand_name">
+                <option selected disabled> Brand name... </option>
+                <option value="price"> Marlboro </option>
+                <option value="6.17"> Newport </option>
+                <option value="5.10"> L&amp;M </option>
+                <option value="price"> Misty </option>
+            </select><br>
+            
+            <input type="submit" value="Calculate Money Saved"><br>
+        </form>
+            
+            
+        
+    </body>
+</html>
